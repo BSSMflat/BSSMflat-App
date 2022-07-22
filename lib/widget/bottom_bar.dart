@@ -12,7 +12,7 @@ class Bottom extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(
             color: Colors.black, // red as border color
-          )
+          ),
         ),
         child: SizedBox(
           height: 60.h,
