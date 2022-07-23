@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
         designSize: Size(360, 800),
         builder: (BuildContext context, Widget? child) => MaterialApp(
-              theme: ThemeData(primaryColor: Color(0xffE5E5E5)),
+              theme: ThemeData( primaryColor: Color(0xffE5E5E5)),
               title: 'BssmFlat',
               debugShowCheckedModeBanner: false,
               home: const DefaultTabController(
@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
                     body: TabBarView(
                       physics: NeverScrollableScrollPhysics(),
                       children: [
-                        homeScreen(),
-                        studyPaperScreen(),
-                        wrongAnswerScreen(),
-                        userScreen()
+                        HomeScreen(),
+                        StudyPaperScreen(),
+                        WrongAnswerScreen(),
+                        UserScreen()
                       ],
                     ),
                     bottomNavigationBar: Bottom(),
