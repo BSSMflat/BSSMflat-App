@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE5E5E5),
+      backgroundColor: const Color(0xffE5E5E5),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
         child: AppBar(
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                   border: Border.all(
                     width: 1,
-                    color: Color(0xffB2B2B2),
+                    color: const Color(0xffB2B2B2),
                   ),
                   borderRadius: BorderRadius.all(Radius.circular(20.h))),
             ),
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                     border: Border.all(
                       width: 1,
-                      color: Color(0xffB2B2B2),
+                      color: const Color(0xffB2B2B2),
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(20.h))),
                 child: Column(
@@ -119,7 +119,7 @@ class _HomeState extends State<Home> {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xff17335C),
+                  primary: const Color(0xff17335C),
                   minimumSize: Size(340.w, 60.h),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.h)),
@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xff17335C),
+                  primary: const Color(0xff17335C),
                   minimumSize: Size(340.w, 60.h),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.h)),
@@ -169,7 +169,7 @@ class _HomeState extends State<Home> {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xff17335C),
+                  primary: const Color(0xff17335C),
                   minimumSize: Size(340.w, 60.h),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.h)),
