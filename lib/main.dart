@@ -1,3 +1,4 @@
+import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/screen/home_screen.dart';
 import 'package:bssmflat/screen/studypaper_screen.dart';
 import 'package:bssmflat/screen/user_screen.dart';
@@ -17,15 +18,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return ScreenUtilInit(
-        designSize: Size(360, 800),
+        designSize: const Size(360, 800),
         builder: (BuildContext context, Widget? child) => MaterialApp(
-              theme: ThemeData( primaryColor: Color(0xffE5E5E5)),
+              theme: ThemeData( primaryColor: CommonColor.gray01),
               title: 'BssmFlat',
               debugShowCheckedModeBanner: false,
-              home: const DefaultTabController(
+              home: DefaultTabController(
                   length: 4,
                   child: Scaffold(
-                    body: TabBarView(
+                    body: const TabBarView(
                       physics: NeverScrollableScrollPhysics(),
                       children: [
                         HomeScreen(),
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
                         UserScreen()
                       ],
                     ),
-                    bottomNavigationBar: Bottom(),
+                    bottomNavigationBar: Common.bottomBar(),
                   )),
             ));
   }
