@@ -3,7 +3,6 @@ import 'package:bssmflat/screen/home_screen.dart';
 import 'package:bssmflat/screen/studypaper_screen.dart';
 import 'package:bssmflat/screen/user_screen.dart';
 import 'package:bssmflat/screen/wrongnote_screen.dart';
-import 'package:bssmflat/widget/bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
