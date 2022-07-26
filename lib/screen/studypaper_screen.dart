@@ -1,5 +1,7 @@
 import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/model/study_paper.dart';
+import 'package:bssmflat/screen/detailPaper_screen.dart';
+import 'package:bssmflat/widget/paper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -39,8 +41,8 @@ class _StudyPaperState extends State<StudyPaper> {
     unsolve_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "해결중"));
 
     fast_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "기한임박"));
-    fast_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "해결중"));
-    fast_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "해결중"));
+    fast_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "기한임박"));
+    fast_paperList.add(Paper("수학", "김규봉", "지수와 로그(3)", "~9/10", "기한임박"));
   }
 
   @override
@@ -73,109 +75,13 @@ class _StudyPaperState extends State<StudyPaper> {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            GestureDetector(
-              onTap: () {
-                setState(() {
-                  openUnsolve = !openUnsolve;
-                });
-              },
-              child: Container(
-                padding: EdgeInsets.fromLTRB(12.w, 8.h, 15.w, 8.h),
-                width: 360.w,
-                height: 50.h,
-                color: Color(0xffD9D9D9),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "미해결 학습지",
-                      style:
-                          TextStyle(fontSize: 20.sp, color: Color(0xff00A9A5)),
-                    ),
-                    openUnsolve
-                        ? Icon(
-                            Icons.keyboard_arrow_up,
-                            size: 40.h,
-                          )
-                        : Icon(
-                            Icons.keyboard_arrow_down,
-                            size: 40.h,
-                          ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10.w),
-              width: 340.w,
-              height: 120.h,
-              decoration: BoxDecoration(
-                  border: Border.all(color: CommonColor.gray02),
-                  borderRadius: BorderRadius.all(Radius.circular(40.h))),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 25.w),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          "수학",
-                          style: TextStyle(
-                              fontSize: 24.sp, color: CommonColor.bssmNavy),
-                        ),
-                        SizedBox(
-                          width: 4.w,
-                        ),
-                        Text(
-                          "김규봉",
-                          style: TextStyle(
-                              fontSize: 14.sp, color: CommonColor.bssmNavy),
-                        ),
-                        SizedBox(
-                          width: 170.w,
-                        ),
-                        Text(
-                          "~9/10",
-                          style: TextStyle(
-                              fontSize: 16.sp, color: CommonColor.bssmNavy),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                      width: 320.w,
-                      child: Divider(color: Color(0xffD5D5D5), thickness: 1.0)),
-                  Padding(
-                    padding: EdgeInsets.only(left: 29.w),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          "지수와 로그 (3)",
-                          style: TextStyle(
-                              fontSize: 20.sp, color: CommonColor.bssmNavy),
-                        ),
-                        SizedBox(
-                          width: 125.w,
-                        ),
-                        Text(
-                          "미제출",
-                          style: TextStyle(
-                              fontSize: 16.sp, color: Color(0xff00A9A5)),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            )
-          ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Study_Paper(unsolve_papers: unsolve_paperList, fast_papers: fast_paperList)
+            ],
+          ),
         ),
       ),
     );
