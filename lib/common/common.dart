@@ -10,8 +10,8 @@ class Common {
           border: Border.all(
             color: CommonColor.gray02, // red as border color
           ),
-          borderRadius: BorderRadius.only(topLeft: Radius.circular(31.r), topRight: Radius.circular(31.r))
-      ),
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(31.r), topRight: Radius.circular(31.r))),
       child: Material(
         color: Colors.transparent,
         child: TabBar(
