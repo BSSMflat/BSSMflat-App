@@ -31,7 +31,7 @@ class Study_Paper extends StatelessWidget {
           ),
           backgroundColor: const Color(0xffD2D2D2),
           children: makeStudyPaper(context, fast_papers),
-        ),
+        )
       ],
     );
   }
