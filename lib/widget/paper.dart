@@ -17,20 +17,21 @@ class Study_Paper extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-    ExpansionTile(
-      title: Text(
-        '미해결학습지',
-        style: TextStyle(fontSize: 20.sp, color: const Color(0xff00A9A5)),
-      ),
-      children: makeStudyPaper(context, unsolve_papers),
-    ),
-    ExpansionTile(
-      title: Text(
-        '기간임박학습지',
-        style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
-      ),
-      children: makeStudyPaper(context, fast_papers),
-    )
+        ExpansionTile(
+          title: Text(
+            '미해결학습지',
+            style: TextStyle(fontSize: 20.sp, color: const Color(0xff00A9A5)),
+          ),
+          children: makeStudyPaper(context, unsolve_papers),
+        ),
+        ExpansionTile(
+          title: Text(
+            '기간임박학습지',
+            style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
+          ),
+          backgroundColor: const Color(0xffD2D2D2),
+          children: makeStudyPaper(context, fast_papers),
+        )
       ],
     );
   }
