@@ -12,26 +12,25 @@ class Study_Paper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Column(
+    return Column(
       children: [
-        ExpansionTile(
-          title: Text(
-            '미해결학습지',
-            style: TextStyle(fontSize: 20.sp, color: Color(0xff00A9A5)),
-          ),
-          children: makeStudyPaper(context, unsolve_papers),
-        ),
-        ExpansionTile(
-          title: Text(
-            '기간임박학습지',
-            style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
-          ),
-          backgroundColor: Color(0xffD2D2D2),
-          children: makeStudyPaper(context, fast_papers),
-        )
+    ExpansionTile(
+      title: Text(
+        '미해결학습지',
+        style: TextStyle(fontSize: 20.sp, color: const Color(0xff00A9A5)),
+      ),
+      children: makeStudyPaper(context, unsolve_papers),
+    ),
+    ExpansionTile(
+      title: Text(
+        '기간임박학습지',
+        style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
+      ),
+      backgroundColor: const Color(0xffD2D2D2),
+      children: makeStudyPaper(context, fast_papers),
+    )
       ],
-    ));
+    );
   }
 }
 
@@ -92,9 +91,9 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
                 width: 320.w,
-                child: Divider(color: Color(0xffD5D5D5), thickness: 1.0)),
+                child: const Divider(color: Color(0xffD5D5D5), thickness: 1.0)),
             Padding(
               padding: EdgeInsets.only(left: 29.w),
               child: Row(
