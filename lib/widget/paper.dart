@@ -12,7 +12,7 @@ class Study_Paper extends StatelessWidget {
   final List<Paper> fast_papers;
   // ignore: use_key_in_widget_constructors
   const Study_Paper({required this.unsolve_papers, required this.fast_papers});
-
+  //1
   @override
   Widget build(BuildContext context) {
     return Column(
