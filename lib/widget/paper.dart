@@ -1,34 +1,37 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/model/study_paper.dart';
 import 'package:bssmflat/screen/detailPaper_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:bssmflat/common/common.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: camel_case_types
 class Study_Paper extends StatelessWidget {
   final List<Paper> unsolve_papers;
   final List<Paper> fast_papers;
-  Study_Paper({required this.unsolve_papers, required this.fast_papers});
-
+  // ignore: use_key_in_widget_constructors
+  const Study_Paper({required this.unsolve_papers, required this.fast_papers});
+  //1
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-    ExpansionTile(
-      title: Text(
-        '미해결학습지',
-        style: TextStyle(fontSize: 20.sp, color: const Color(0xff00A9A5)),
-      ),
-      children: makeStudyPaper(context, unsolve_papers),
-    ),
-    ExpansionTile(
-      title: Text(
-        '기간임박학습지',
-        style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
-      ),
-      backgroundColor: const Color(0xffD2D2D2),
-      children: makeStudyPaper(context, fast_papers),
-    )
+        ExpansionTile(
+          title: Text(
+            '미해결학습지',
+            style: TextStyle(fontSize: 20.sp, color: const Color(0xff00A9A5)),
+          ),
+          children: makeStudyPaper(context, unsolve_papers),
+        ),
+        ExpansionTile(
+          title: Text(
+            '기간임박학습지',
+            style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
+          ),
+          backgroundColor: const Color(0xffD2D2D2),
+          children: makeStudyPaper(context, fast_papers),
+        ),
       ],
     );
   }
@@ -41,15 +44,9 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
     int time_color = color_select(papers[i].solve);
     results.add(InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-              fullscreenDialog: true,
-              builder: (BuildContext context) {
-                return DetailPaper(
-                  papers: papers[i],
-                );
-              }),
-        );
+        Navigator.of(context, rootNavigator: true).pushReplacement(
+            MaterialPageRoute(
+                builder: (context) => DetailPaper(papers: papers[i])));
       },
       child: Container(
         margin: EdgeInsets.all(10.w),
