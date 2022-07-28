@@ -1,5 +1,7 @@
 # BSSMflat
 
+Mathflat 서비스를 오마주한 부산소프트웨어마이스터고등학교 전용 온라인 문제 저지입니다.
+
 ## Git upload Rules
 
 - [CREATE] 새로 만들었을때
