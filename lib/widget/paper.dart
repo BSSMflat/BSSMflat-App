@@ -152,23 +152,30 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
                 children: [
                   Text(
                     papers[i].subject,
-                    style:
-                        TextStyle(fontSize: 24.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 24.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
                     width: 4.w,
                   ),
                   Text(
                     papers[i].teacher,
-                    style:
-                        TextStyle(fontSize: 14.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 14.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
                     width: 170.w,
                   ),
                   Text(
                     papers[i].time,
-                    style: TextStyle(fontSize: 16.sp, color: Color(0xff17335C)),
+                    style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Color(0xff17335C),
+                        fontFamily: "Pretendard"),
                   ),
                 ],
               ),
@@ -183,16 +190,20 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
                 children: [
                   Text(
                     papers[i].name,
-                    style:
-                        TextStyle(fontSize: 24.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 24.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
                     width: 118.w,
                   ),
                   Text(
                     "${papers[i].count}개",
-                    style:
-                        TextStyle(fontSize: 16.sp, color: Color(count_color)),
+                    style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Color(count_color),
+                        fontFamily: "Pretendard"),
                   ),
                 ],
               ),

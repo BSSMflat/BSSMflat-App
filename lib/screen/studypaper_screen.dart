@@ -52,7 +52,7 @@ class _StudyPaperState extends State<StudyPaper> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "학습지",
-            style: TextStyle(fontSize: 29.sp),
+            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(

@@ -33,7 +33,7 @@ class _UserState extends State<User> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "개인정보",
-            style: TextStyle(fontSize: 29.sp),
+            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(
@@ -70,7 +70,9 @@ class _UserState extends State<User> {
                 child: Text(
                   "로그인",
                   style: TextStyle(
-                      fontSize: 20.sp, color: const Color(0xffFFFFFF)),
+                      fontSize: 20.sp,
+                      color: const Color(0xffFFFFFF),
+                      fontFamily: "Pretendard"),
                 )),
             SizedBox(
               height: 15.h,
@@ -87,7 +89,9 @@ class _UserState extends State<User> {
                 child: Text(
                   "다른 방법으로 로그인",
                   style: TextStyle(
-                      fontSize: 20.sp, color: const Color(0xff17335C)),
+                      fontSize: 20.sp,
+                      color: const Color(0xff17335C),
+                      fontFamily: "Pretendard"),
                 )),
             SizedBox(
               height: 16.h,
@@ -97,7 +101,9 @@ class _UserState extends State<User> {
                 child: Text(
                   "도움이 필요하다면",
                   style: TextStyle(
-                      color: const Color(0xff17335C), fontSize: 12.sp),
+                      color: const Color(0xff17335C),
+                      fontSize: 12.sp,
+                      fontFamily: "Pretendard"),
                 ))
           ],
         ),

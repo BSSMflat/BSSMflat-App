@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "홈",
-            style: TextStyle(fontSize: 29.sp),
+            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(
@@ -130,7 +130,8 @@ class _HomeState extends State<Home> {
                   children: [
                     Text(
                       "새로 올라운 학습지",
-                      style: TextStyle(fontSize: 20.sp),
+                      style:
+                          TextStyle(fontSize: 20.sp, fontFamily: "Pretendard"),
                     ),
                     Icon(
                       Icons.keyboard_arrow_right,
@@ -155,7 +156,8 @@ class _HomeState extends State<Home> {
                   children: [
                     Text(
                       "미해결 학습지",
-                      style: TextStyle(fontSize: 20.sp),
+                      style:
+                          TextStyle(fontSize: 20.sp, fontFamily: "Pretendard"),
                     ),
                     Icon(
                       Icons.keyboard_arrow_right,
@@ -180,7 +182,8 @@ class _HomeState extends State<Home> {
                   children: [
                     Text(
                       "새로 올라온 학습지",
-                      style: TextStyle(fontSize: 20.sp),
+                      style:
+                          TextStyle(fontSize: 20.sp, fontFamily: "Pretendard"),
                     ),
                     Icon(
                       Icons.keyboard_arrow_right,

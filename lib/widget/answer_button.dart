@@ -38,7 +38,8 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               "1",
               style: TextStyle(
                   fontSize: 15.sp,
-                  color: answer1 ? Colors.white : Colors.black),
+                  color: answer1 ? Colors.white : Colors.black,
+                  fontFamily: "Pretendard"),
             ),
             style: ElevatedButton.styleFrom(
               primary: answer1 ? const Color(0xffE6333F) : null,
@@ -58,12 +59,11 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               });
             },
             // ignore: sort_child_properties_last
-            child: Text(
-              "2",
-              style: TextStyle(
-                  fontSize: 15.sp,
-                  color: answer2 ? Colors.white : Colors.black),
-            ),
+            child: Text("2",
+                style: TextStyle(
+                    fontSize: 15.sp,
+                    color: answer2 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard")),
             style: ElevatedButton.styleFrom(
               primary: answer2 ? const Color(0xffE6333F) : null,
               shape: const CircleBorder(),
@@ -86,7 +86,8 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               "3",
               style: TextStyle(
                   fontSize: 15.sp,
-                  color: answer3 ? Colors.white : Colors.black),
+                  color: answer3 ? Colors.white : Colors.black,
+                  fontFamily: "Pretendard"),
             ),
             style: ElevatedButton.styleFrom(
               primary: answer3 ? const Color(0xffE6333F) : null,
@@ -110,7 +111,8 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               "4",
               style: TextStyle(
                   fontSize: 15.sp,
-                  color: answer4 ? Colors.white : Colors.black),
+                  color: answer4 ? Colors.white : Colors.black,
+                  fontFamily: "Pretendard"),
             ),
             style: ElevatedButton.styleFrom(
               primary: answer4 ? const Color(0xffE6333F) : null,
@@ -134,7 +136,8 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               "5",
               style: TextStyle(
                   fontSize: 15.sp,
-                  color: answer5 ? Colors.white : Colors.black),
+                  color: answer5 ? Colors.white : Colors.black,
+                  fontFamily: "Pretendard"),
             ),
             style: ElevatedButton.styleFrom(
               primary: answer5 ? const Color(0xffE6333F) : null,
@@ -158,7 +161,8 @@ class _Study_Answer_buttonState extends State<Study_Answer_button> {
               "모름",
               style: TextStyle(
                   fontSize: 15.sp,
-                  color: answer6 ? Colors.white : Colors.black),
+                  color: answer6 ? Colors.white : Colors.black,
+                  fontFamily: "Pretendard"),
             ),
             style: ElevatedButton.styleFrom(
               primary: answer6 ? const Color(0xffE6333F) : null,
@@ -209,7 +213,8 @@ class _Wrong_Answer_buttonState extends State<Wrong_Answer_button> {
                 "1",
                 style: TextStyle(
                     fontSize: 15.sp,
-                    color: answer1 ? Colors.white : Colors.black),
+                    color: answer1 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard"),
               ),
               style: ElevatedButton.styleFrom(
                 primary: answer1 ? const Color(0xffE6333F) : null,
@@ -232,7 +237,8 @@ class _Wrong_Answer_buttonState extends State<Wrong_Answer_button> {
                 "2",
                 style: TextStyle(
                     fontSize: 15.sp,
-                    color: answer2 ? Colors.white : Colors.black),
+                    color: answer2 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard"),
               ),
               style: ElevatedButton.styleFrom(
                 primary: answer2 ? const Color(0xffE6333F) : null,
@@ -255,7 +261,8 @@ class _Wrong_Answer_buttonState extends State<Wrong_Answer_button> {
                 "3",
                 style: TextStyle(
                     fontSize: 15.sp,
-                    color: answer3 ? Colors.white : Colors.black),
+                    color: answer3 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard"),
               ),
               style: ElevatedButton.styleFrom(
                 primary: answer3 ? const Color(0xffE6333F) : null,
@@ -278,7 +285,8 @@ class _Wrong_Answer_buttonState extends State<Wrong_Answer_button> {
                 "4",
                 style: TextStyle(
                     fontSize: 15.sp,
-                    color: answer4 ? Colors.white : Colors.black),
+                    color: answer4 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard"),
               ),
               style: ElevatedButton.styleFrom(
                 primary: answer4 ? const Color(0xffE6333F) : null,
@@ -301,7 +309,8 @@ class _Wrong_Answer_buttonState extends State<Wrong_Answer_button> {
                 "5",
                 style: TextStyle(
                     fontSize: 15.sp,
-                    color: answer5 ? Colors.white : Colors.black),
+                    color: answer5 ? Colors.white : Colors.black,
+                    fontFamily: "Pretendard"),
               ),
               style: ElevatedButton.styleFrom(
                 primary: answer5 ? const Color(0xffE6333F) : null,

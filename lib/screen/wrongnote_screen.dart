@@ -46,7 +46,7 @@ class _WrongNoteState extends State<WrongNote> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "오답노트",
-            style: TextStyle(fontSize: 29.sp),
+            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(

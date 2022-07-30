@@ -25,7 +25,7 @@ class _DetailPaperState extends State<DetailPaper> {
             backgroundColor: const Color(0xff17335C),
             title: Text(
               "학습지",
-              style: TextStyle(fontSize: 29.sp),
+              style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
             ),
             centerTitle: true,
             leading: IconButton(
@@ -54,11 +54,19 @@ class _DetailPaperState extends State<DetailPaper> {
               children: [
                 Text(
                   "1번 문제 ",
-                  style: TextStyle(fontSize: 16.sp, color: Colors.black),
+                  style: TextStyle(
+                      fontSize: 16.sp,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Pretendard"),
                 ),
                 Text(
                   "/ 26번 문제",
-                  style: TextStyle(fontSize: 16.sp, color: CommonColor.gray02),
+                  style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.sp,
+                      color: CommonColor.gray02,
+                      fontFamily: "Pretendard"),
                 )
               ],
             ),
@@ -75,7 +83,7 @@ class _DetailPaperState extends State<DetailPaper> {
               child: Text(
                 "사진",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 50.sp),
+                style: TextStyle(fontSize: 50.sp, fontFamily: "Pretendard"),
               ),
             ),
           ),
@@ -100,7 +108,10 @@ class _DetailPaperState extends State<DetailPaper> {
                   icon: Image.asset("images/tabbar/left.png"),
                   label: Text(
                     "이전 문제",
-                    style: TextStyle(fontSize: 14.sp, color: Colors.black),
+                    style: TextStyle(
+                        fontSize: 14.sp,
+                        color: Colors.black,
+                        fontFamily: "Pretendard"),
                   ),
                   style: ElevatedButton.styleFrom(
                       primary: Colors.white,
@@ -113,7 +124,10 @@ class _DetailPaperState extends State<DetailPaper> {
                   icon: Image.asset("images/tabbar/menu.png"),
                   label: Text(
                     "풀이 현황",
-                    style: TextStyle(fontSize: 14.sp, color: Colors.black),
+                    style: TextStyle(
+                        fontSize: 14.sp,
+                        color: Colors.black,
+                        fontFamily: "Pretendard"),
                   ),
                   style: ElevatedButton.styleFrom(
                       primary: Colors.white,
@@ -129,7 +143,10 @@ class _DetailPaperState extends State<DetailPaper> {
                     children: [
                       Text(
                         "다음 문제",
-                        style: TextStyle(fontSize: 14.sp, color: Colors.black),
+                        style: TextStyle(
+                            fontSize: 14.sp,
+                            color: Colors.black,
+                            fontFamily: "Pretendard"),
                       ),
                       SizedBox(width: 5.w),
                       Image.asset("images/tabbar/right.png")
