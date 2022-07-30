@@ -106,7 +106,7 @@ class _DetailPaperState extends State<DetailPaper> {
                       primary: Colors.white,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.h)),
-                      side: BorderSide(color: Colors.white)),
+                      side: const BorderSide(color: Colors.white)),
                 ),
                 OutlinedButton.icon(
                   onPressed: () {},
@@ -119,7 +119,7 @@ class _DetailPaperState extends State<DetailPaper> {
                       primary: Colors.white,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.h)),
-                      side: BorderSide(color: Colors.white)),
+                      side: const BorderSide(color: Colors.white)),
                 ),
                 OutlinedButton(
                   onPressed: () {},
@@ -139,7 +139,7 @@ class _DetailPaperState extends State<DetailPaper> {
                       primary: Colors.white,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.h)),
-                      side: BorderSide(color: Colors.white)),
+                      side: const BorderSide(color: Colors.white)),
                 ),
               ],
             ),
