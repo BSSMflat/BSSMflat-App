@@ -1,6 +1,4 @@
-import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/model/study_paper.dart';
-import 'package:bssmflat/screen/detailPaper_screen.dart';
 import 'package:bssmflat/widget/paper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -28,8 +26,7 @@ class StudyPaper extends StatefulWidget {
 class _StudyPaperState extends State<StudyPaper> {
   List<Paper> unsolve_paperList = <Paper>[];
   List<Paper> fast_paperList = <Paper>[];
-  bool openUnsolve = false;
-  bool openFast = false;
+  
 
   @override
   void initState() {
