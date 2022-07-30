@@ -80,9 +80,9 @@ class _DetailPaperState extends State<DetailPaper> {
             ),
           ),
           SizedBox(height: 47.h),
-          Answer.Answer_button(),
+          const Study_Answer_button(),
           SizedBox(
-            height: 68.h,
+            height: 95.h,
           ),
           Container(
             width: double.infinity,
