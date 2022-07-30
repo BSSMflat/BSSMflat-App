@@ -1,3 +1,4 @@
+import 'package:bssmflat/common/common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,7 +26,7 @@ class _UserState extends State<User> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffE5E5E5),
+      backgroundColor: CommonColor.gray01,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
         child: AppBar(
