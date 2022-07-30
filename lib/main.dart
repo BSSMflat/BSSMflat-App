@@ -2,9 +2,10 @@ import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/screen/home_screen.dart';
 import 'package:bssmflat/screen/studypaper_screen.dart';
 import 'package:bssmflat/screen/user_screen.dart';
-import 'package:bssmflat/screen/wrongnote_screen.dart';
+import 'package:bssmflat/screen/wrongNote_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
+    // ignore: prefer_const_constructors, deprecated_member_use
+    SystemChrome.setEnabledSystemUIOverlays([]);
     return ScreenUtilInit(
         designSize: const Size(360, 800),
         builder: (BuildContext context, Widget? child) => MaterialApp(
-              theme: ThemeData( primaryColor: CommonColor.gray01),
+              theme: ThemeData(primaryColor: CommonColor.gray01),
               title: 'BssmFlat',
               debugShowCheckedModeBanner: false,
               home: DefaultTabController(

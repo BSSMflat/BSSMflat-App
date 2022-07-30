@@ -1,20 +1,20 @@
 import 'package:bssmflat/common/common.dart';
-import 'package:bssmflat/model/study_paper.dart';
+import 'package:bssmflat/model/wrong_paper.dart';
 import 'package:bssmflat/widget/answer_button.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DetailPaper extends StatefulWidget {
-  final Paper papers;
+class WrongDetailPaper extends StatefulWidget {
+  final WrongPaper papers;
   // ignore: use_key_in_widget_constructors
-  const DetailPaper({required this.papers});
+  const WrongDetailPaper({required this.papers});
 
   @override
-  State<DetailPaper> createState() => _DetailPaperState();
+  State<WrongDetailPaper> createState() => _WrongDetailPaperState();
 }
 
-class _DetailPaperState extends State<DetailPaper> {
+class _WrongDetailPaperState extends State<WrongDetailPaper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _DetailPaperState extends State<DetailPaper> {
           child: AppBar(
             backgroundColor: const Color(0xff17335C),
             title: Text(
-              "학습지",
+              "오답노트",
               style: TextStyle(fontSize: 29.sp),
             ),
             centerTitle: true,
@@ -53,7 +53,7 @@ class _DetailPaperState extends State<DetailPaper> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
-                  "1번 문제 ",
+                  "9번 문제 ",
                   style: TextStyle(fontSize: 16.sp, color: Colors.black),
                 ),
                 Text(
@@ -63,8 +63,15 @@ class _DetailPaperState extends State<DetailPaper> {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [Image.asset("images/answer/unCorrect.png")],
+            ),
+          ),
           SizedBox(
-            height: 157.h,
+            height: 134.5.h,
           ),
           Container(
             width: double.infinity,
@@ -80,9 +87,27 @@ class _DetailPaperState extends State<DetailPaper> {
             ),
           ),
           SizedBox(height: 47.h),
-          const Study_Answer_button(),
+          const Wrong_Answer_button(),
           SizedBox(
-            height: 95.h,
+            height: 36.h,
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.w),
+            child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+              ElevatedButton(
+                onPressed: () {},
+                // ignore: sort_child_properties_last
+                child: Image.asset("images/memo.png"),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(50.w, 50.h),
+                    primary: const Color(0xffF4F4F4),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.h))),
+              ),
+            ]),
+          ),
+          SizedBox(
+            height: 10.h,
           ),
           Container(
             width: double.infinity,
