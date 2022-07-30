@@ -25,7 +25,7 @@ class _UserState extends State<User> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE5E5E5),
+      backgroundColor: const Color(0xffE5E5E5),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
         child: AppBar(
@@ -80,7 +80,7 @@ class _UserState extends State<User> {
                     minimumSize: Size(300.w, 45.h),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.h),
-                      side: BorderSide(color: Color(0xffA7BEE3)),
+                      side: const BorderSide(color: Color(0xffA7BEE3)),
                     ),
                     primary: const Color(0xffFFFFFF)),
                 child: Text(

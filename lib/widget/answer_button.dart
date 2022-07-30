@@ -71,12 +71,14 @@ class Answer {
           ),
           OutlinedButton(
             onPressed: () {},
+            
             // ignore: sort_child_properties_last
             child: Text(
               "모름",
               style: TextStyle(fontSize: 15.sp, color: Colors.black),
             ),
             style: ElevatedButton.styleFrom(
+              primary: Color(0xffE6333F),
               minimumSize: Size(30.w, 30.h),
               shape: const CircleBorder(),
             ),
