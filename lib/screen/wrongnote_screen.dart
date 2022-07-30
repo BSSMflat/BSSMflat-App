@@ -1,3 +1,4 @@
+import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/model/wrong_paper.dart';
 import 'package:bssmflat/widget/Paper.dart';
 import 'package:flutter/material.dart';
@@ -33,12 +34,12 @@ class _WrongNoteState extends State<WrongNote> {
     wrong_paperList.add(WrongPaper("수학", "김규봉", "지수와 로그(3)", "~9/10", 1));
     wrong_paperList.add(WrongPaper("수학", "김규봉", "지수와 로그(3)", "~9/10", 4));
     wrong_paperList.add(WrongPaper("수학", "김규봉", "지수와 로그(3)", "~9/10", 8));
-
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CommonColor.gray01,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
         child: AppBar(
@@ -68,11 +69,7 @@ class _WrongNoteState extends State<WrongNote> {
       ),
       body: SingleChildScrollView(
         child: Center(
-          child: Column(
-            children:
-              makeWrongPaper(context, wrong_paperList)
-            
-          ),
+          child: Column(children: makeWrongPaper(context, wrong_paperList)),
         ),
       ),
     );
