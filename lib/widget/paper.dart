@@ -31,7 +31,6 @@ class Study_Paper extends StatelessWidget {
             '기간임박학습지',
             style: TextStyle(fontSize: 20.sp, color: CommonColor.bssmRed),
           ),
-          backgroundColor: const Color(0xffD2D2D2),
           children: makeStudyPaper(context, fast_papers),
         ),
       ],
@@ -56,6 +55,7 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
         width: 340.w,
         height: 105.h,
         decoration: BoxDecoration(
+            color: Colors.white,
             border: Border.all(color: CommonColor.gray02),
             borderRadius: BorderRadius.all(Radius.circular(40.h))),
         child: Column(
@@ -138,6 +138,7 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
         width: 340.w,
         height: 105.h,
         decoration: BoxDecoration(
+            color: Colors.white,
             border: Border.all(color: CommonColor.gray02),
             borderRadius: BorderRadius.all(Radius.circular(40.h))),
         child: Column(

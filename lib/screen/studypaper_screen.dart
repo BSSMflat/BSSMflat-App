@@ -1,3 +1,4 @@
+import 'package:bssmflat/common/common.dart';
 import 'package:bssmflat/model/study_paper.dart';
 import 'package:bssmflat/widget/paper.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,6 @@ class StudyPaper extends StatefulWidget {
 class _StudyPaperState extends State<StudyPaper> {
   List<Paper> unsolve_paperList = <Paper>[];
   List<Paper> fast_paperList = <Paper>[];
-  
 
   @override
   void initState() {
@@ -45,6 +45,7 @@ class _StudyPaperState extends State<StudyPaper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CommonColor.gray01,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
         child: AppBar(
@@ -76,7 +77,9 @@ class _StudyPaperState extends State<StudyPaper> {
         child: Center(
           child: Column(
             children: [
-              Study_Paper(unsolve_papers: unsolve_paperList, fast_papers: fast_paperList)
+              Study_Paper(
+                  unsolve_papers: unsolve_paperList,
+                  fast_papers: fast_paperList)
             ],
           ),
         ),
