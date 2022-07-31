@@ -1,5 +1,7 @@
 import 'package:bssmflat/common/common.dart';
+import 'package:bssmflat/main.dart';
 import 'package:bssmflat/model/wrong_paper.dart';
+import 'package:bssmflat/screen/wrongnote_screen.dart';
 import 'package:bssmflat/widget/answer_button.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +35,10 @@ class _WrongDetailPaperState extends State<WrongDetailPaper> {
                 Icons.arrow_circle_left_outlined,
                 color: Color(0xffFFFFFF),
               ),
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const MyApp()));
+              },
               iconSize: 25.h,
             ),
             actions: const [
