@@ -42,7 +42,9 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
   List<Widget> results = [];
 
   for (var i = 0; i < papers.length; i++) {
+    int solve_color = solve_color_select(papers[i].solve);
     int time_color = time_color_select(papers[i].solve);
+
     results.add(InkWell(
       onTap: () {
         Navigator.of(context, rootNavigator: true).pushReplacement(
@@ -69,23 +71,30 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
                 children: [
                   Text(
                     papers[i].subject,
-                    style:
-                        TextStyle(fontSize: 24.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 24.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
                     width: 4.w,
                   ),
                   Text(
                     papers[i].teacher,
-                    style:
-                        TextStyle(fontSize: 14.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 14.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
-                    width: 170.w,
+                    width: 155.w,
                   ),
                   Text(
                     papers[i].time,
-                    style: TextStyle(fontSize: 16.sp, color: Color(time_color)),
+                    style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Color(time_color),
+                        fontFamily: "Pretendard"),
                   ),
                 ],
               ),
@@ -100,15 +109,20 @@ List<Widget> makeStudyPaper(BuildContext context, List<Paper> papers) {
                 children: [
                   Text(
                     papers[i].name,
-                    style:
-                        TextStyle(fontSize: 24.sp, color: CommonColor.bssmNavy),
+                    style: TextStyle(
+                        fontSize: 24.sp,
+                        color: CommonColor.bssmNavy,
+                        fontFamily: "Pretendard"),
                   ),
                   SizedBox(
-                    width: 105.w,
+                    width: 90.w,
                   ),
                   Text(
                     papers[i].solve,
-                    style: TextStyle(fontSize: 16.sp, color: Color(time_color)),
+                    style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Color(solve_color),
+                        fontFamily: "Pretendard"),
                   ),
                 ],
               ),
@@ -168,7 +182,7 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
                         fontFamily: "Pretendard"),
                   ),
                   SizedBox(
-                    width: 170.w,
+                    width: 160.w,
                   ),
                   Text(
                     papers[i].time,
@@ -196,7 +210,7 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
                         fontFamily: "Pretendard"),
                   ),
                   SizedBox(
-                    width: 118.w,
+                    width: 110.w,
                   ),
                   Text(
                     "${papers[i].count}개",
@@ -216,8 +230,17 @@ List<Widget> makeWrongPaper(BuildContext context, List<WrongPaper> papers) {
   return results;
 }
 
-int time_color_select(String time) {
+int solve_color_select(String time) {
   var color = 0xff00A9A5;
+  if (time == "기한임박") {
+    //db에서 넘어온 기간이 현재기간과 비교해 7일밖에 안남았을때
+    color = 0xffE6333F;
+  }
+  return color;
+}
+
+int time_color_select(String time) {
+  var color = 0xff17335C;
   if (time == "기한임박") {
     //db에서 넘어온 기간이 현재기간과 비교해 7일밖에 안남았을때
     color = 0xffE6333F;
