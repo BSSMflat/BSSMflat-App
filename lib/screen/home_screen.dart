@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                             "공지사항",
                             style: TextStyle(fontSize: 20.sp),
                           ),
-                          SizedBox(width: 170.w),
+                          SizedBox(width: 155.w),
                           Icon(
                             Icons.keyboard_arrow_right,
                             size: 40.h,
