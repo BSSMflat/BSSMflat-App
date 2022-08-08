@@ -27,7 +27,7 @@ class _WrongDetailPaperState extends State<WrongDetailPaper> {
             backgroundColor: const Color(0xff17335C),
             title: Text(
               "오답노트",
-              style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
+              style: TextStyle(fontSize: 24.sp, fontFamily: "Pretendard"),
             ),
             centerTitle: true,
             leading: IconButton(
@@ -39,15 +39,16 @@ class _WrongDetailPaperState extends State<WrongDetailPaper> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const MyApp()));
               },
-              iconSize: 25.h,
+              iconSize: 35.h,
             ),
-            actions: const [
+            actions: [
               IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.menu,
                     color: Color(0xffFFFFFF),
                   ),
-                  onPressed: null),
+                  onPressed: null,
+              iconSize: 35.h,),
             ],
           ),
         ),
