@@ -27,7 +27,7 @@ class _DetailPaperState extends State<DetailPaper> {
             backgroundColor: const Color(0xff17335C),
             title: Text(
               "학습지",
-              style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
+              style: TextStyle(fontSize: 24.sp, fontFamily: "Pretendard"),
             ),
             centerTitle: true,
             leading: IconButton(
@@ -39,15 +39,18 @@ class _DetailPaperState extends State<DetailPaper> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const MyApp()));
               },
-              iconSize: 25.h,
+              iconSize: 35.h,
             ),
-            actions: const [
+            actions: [
               IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.menu,
                     color: Color(0xffFFFFFF),
                   ),
-                  onPressed: null),
+                  onPressed: null,
+                  
+              iconSize: 35.h,
+                  ),
             ],
           ),
         ),
@@ -95,11 +98,11 @@ class _DetailPaperState extends State<DetailPaper> {
           SizedBox(height: 47.h),
           const Study_Answer_button(),
           SizedBox(
-            height: 95.h,
+            height: 75.h, 
           ),
           Container(
             width: double.infinity,
-            height: 60.h,
+            height: 80.h,
             decoration: BoxDecoration(
                 border: Border.all(width: 1.0),
                 borderRadius: BorderRadius.only(
