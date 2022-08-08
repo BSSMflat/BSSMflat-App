@@ -52,7 +52,7 @@ class _StudyPaperState extends State<StudyPaper> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "학습지",
-            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
+            style: TextStyle(fontSize: 24.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(
@@ -61,15 +61,17 @@ class _StudyPaperState extends State<StudyPaper> {
               color: Color(0xffFFFFFF),
             ),
             onPressed: null,
-            iconSize: 25.h,
+            iconSize: 35.h,
           ),
-          actions: const [
+          actions: [
             IconButton(
-                icon: Icon(
-                  Icons.menu,
-                  color: Color(0xffFFFFFF),
-                ),
-                onPressed: null),
+              icon: const Icon(
+                Icons.menu,
+                color: Color(0xffFFFFFF),
+              ),
+              onPressed: null,
+              iconSize: 35.h,
+            ),
           ],
         ),
       ),
