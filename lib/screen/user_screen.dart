@@ -33,7 +33,7 @@ class _UserState extends State<User> {
           backgroundColor: const Color(0xff17335C),
           title: Text(
             "개인정보",
-            style: TextStyle(fontSize: 29.sp, fontFamily: "Pretendard"),
+            style: TextStyle(fontSize: 24.sp, fontFamily: "Pretendard"),
           ),
           centerTitle: true,
           leading: IconButton(
@@ -42,15 +42,16 @@ class _UserState extends State<User> {
               color: Color(0xffFFFFFF),
             ),
             onPressed: null,
-            iconSize: 25.h,
+            iconSize: 35.h,
           ),
-          actions: const [
+          actions: [
             IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
                   color: Color(0xffFFFFFF),
                 ),
-                onPressed: null),
+                onPressed: null,
+              iconSize: 35.h,),
           ],
         ),
       ),
